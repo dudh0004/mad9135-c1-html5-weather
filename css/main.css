@@ -12,12 +12,38 @@ html{
   }
 
 .container{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
 }
 
 .card{
-    display: inline-block;
-    background-color: #e291ae;
+    width: 30rem;
+    background-color: #df9fb5;
     border-radius: 5%;
     text-align: left;
     padding: 1rem;
+}
+
+.button{
+}
+
+@media screen and (min-width: 400px){
+    .container{
+        grid-template-columns: repeat(1, fr);
+    }
+}
+
+@media screen and (min-width: 600px){
+    .container{
+        grid-template-columns: repeat(2, fr);
+    }
+}
+
+@media screen and (min-width: 900px){
+    .container{
+        grid-template-columns: repeat(3, fr);
+    }
 }
