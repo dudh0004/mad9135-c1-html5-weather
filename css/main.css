@@ -1,0 +1,23 @@
+html{
+    background-color: #eecbd7;
+}
+
+.heading {
+    color: #9c0b3e;
+    text-align: center;
+}
+
+::placeholder { 
+    color: #9c0b3e;
+  }
+
+.container{
+}
+
+.card{
+    display: inline-block;
+    background-color: #e291ae;
+    border-radius: 5%;
+    text-align: left;
+    padding: 1rem;
+}
