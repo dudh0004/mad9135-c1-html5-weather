@@ -1,71 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
-        <link type="text/css" rel="stylesheet" href="css/main.css"/>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+  <body>
+    <form>
+      <div class="input-field">
+        <input id="search" type="search" placeholder="Search by City" />
+        <label class="label-icon" for="search"></label>
+        <i class="material-icons">close</i>
+      </div>
+    </form>
+    <div class="button">
+      <a id="searchResult" class="waves-effect waves-light pink darken-2 btn" >
+        <i class="material-icons right">search</i>Search</a>
+      <a id="currentLocation" class="waves-effect waves-light pink darken-2 btn">
+        <i class="material-icons right">location_on</i>Location</a>
+      <a id="sixDays" class="waves-effect waves-light pink darken-2 btn" >Days</a>
+      <a id="sixHours" class="waves-effect waves-light pink darken-2 btn" >Hours</a>
+    </div>
 
-    <body>
-        
-   
-        <form>
-            <div class="input-field">
-                <input id="search" type="search" placeholder="Search by City" required>
-                <label class="label-icon" for="search"></label>
-                <i class="material-icons">close</i>
+    <div class="cityName">
+      <p class="heading"></p>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <h5 class="card-title p-2"></h5>
+              <p class="card-hour"></p>
+              <img src="" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h3 class="card-title"></h3>
+                <p class="card-text">Temp</p>
+                <p class="card-text">High Feels like</p>
+                <p class="card-text">Pressure</p>
+                <p class="card-text">Humidity</p>
+                <p class="card-text">UV Index</p>
+                <p class="card-text">Dewpoint</p>
+                <p class="card-text">Wind</p>
+                <p class="card-text">Sunrise</p>
+                <p class="card-text">Sunset</p>
+              </div>
             </div>
-        </form>
-        <div class="button">
-            <a id="searchResult" class="waves-effect waves-light pink darken-2 btn"><i class="material-icons left">search</i>Search</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
-            <a id="currentLocation" class="waves-effect waves-light pink darken-2 btn"><i class="material-icons left">location_on</i>My Location</a>
-            <a id="sixDays" class="waves-effect waves-light pink darken-2 btn"><i class="material-icons left">location_on</i>Six Days</a>
-            <a id="sixHours" class="waves-effect waves-light pink darken-2 btn"><i class="material-icons left">location_on</i>Six hours</a>
-            </div>
-            <!-- <div class="daysData">
-                </div>
-                <div class="hoursData">
-                    
-                </div> -->
-                <div class="cityName">
-                    <h3 class="heading"></h3>
-                    </div>
-                <main>
-                <div class="container">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card">
-                            <h5 class="card-title p-2"></h5>
-                              <img src=""
-                                class="card-img-top" alt="" />
-                              <div class="card-body">
-                                <h3 class="card-title"></h3>
-                                <p class="card-text">Temp</p>
-                                <p class="card-text">High Feels like</p>
-                                <p class="card-text">Pressure</p>
-                                <p class="card-text">Humidity</p>
-                                <p class="card-text">UV Index</p>
-                                <p class="card-text">Dewpoint</p>
-                                <p class="card-text">Wind</p>
-                                <p class="card-text">Sunrise</p>
-                                <p class="card-text">Sunset</p>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                </main>
-
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script src="./js/index.js" type="module"></script>
-    </body>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
 </html>
-
